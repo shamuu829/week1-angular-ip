@@ -1,6 +1,7 @@
 // import { Quote } from '@angular/compiler';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import {Quote} from '../quote'
+
 @Component({
   selector: 'app-quote-detail',
   templateUrl: './quote-detail.component.html',
@@ -14,7 +15,14 @@ export class QuoteDetailComponent implements OnInit {
   deleteQuote(read:boolean){
     this.isRead.emit(read);
   }
-  upvote(){this.quoty.likes+=1; } downvote(){this.quoty.dislikes+=1;}
+
+downvote(){
+  this.quoty.dislikes+=1;
+}
+upvote(){
+  this.quoty.likes+=1;
+}
+  
   constructor() { }
 
   
