@@ -1,19 +1,19 @@
 .form-control{
-  color: white;
-  background: transparent;
+  color: black;
+  background:transparent;
   font-weight: 570;
 }
 label{
-  color: white;
+  color: black;
   font-weight: 600;
 }
 hr{
   width: 50%;
   height: 2px;
-  background-color: green;
+  background-color: rgb(128, 0, 38);
 }
 .heading{
-  color: white;
+  color: black;
   text-align: center;
   padding-top: 2%;
 }
